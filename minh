@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+</head>
+<body bgcolor="#0f274a">
+<br><br><br>
+<table align="center" width="400" cellpadding="10" bgcolor="#0d0c2b">
+<tr>
+<td>
+<font color="white" size="5"><b>Sign up</b></font><br>
+<font color="gray" size="2">Social gaming to a whole new level!</font>
+<br><br>
+<table width="100%">
+<tr>
+<td align="center" bgcolor="#1a1a1a">Sign in with Google</td>
+<td align="center" bgcolor="#2a2a2a">Sign in with Apple</td>
+</tr>
+</table>
+<br>
+<center><font color="gray" size="2">Or sign in Email</font></center>
+<br>
+<form>
+<font color="white">Email*</font><br>
+<input type="text" size="40"><br><br>
+
+<font color="white">Password*</font><br>
+<input type="password" size="40"><br><br>
+
+<font color="white">Confirm password*</font><br>
+<input type="password" size="40"><br><br>
+
+<!-- Name -->
+<table width="100%">
+<tr>
+<td>
+<font color="white">First Name</font><br>
+<input type="text" size="18">
+</td>
+<td>
+<font color="white">Last Name</font><br>
+<input type="text" size="18">
+</td>
+</tr>
+</table>
+<br>
+<font color="white">Birthday</font><br>
+<input type="date"><br><br>
+<!-- Nick + phone -->
+<table width="100%">
+<tr>
+<td>
+<font color="white">Nick name*</font><br>
+<input type="text" size="18">
+</td>
+<td>
+<font color="white">Phone number</font><br>
+<input type="text" size="18">
+</td>
+</tr>
+</table>
+<br>
+<table width="100%">
+<tr>
+<td>
+<font color="white">Gender</font><br>
+<select>
+<option>Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+</td>
+<td>
+<font color="white">Country</font><br>
+<select>
+<option>Select Country</option>
+<option>Vietnam</option>
+<option>USA</option>
+</select>
+</td>
+</tr>
+</table>
+<br>
+<font color="gray" size="2">
+<input type="checkbox"> I am over the age of 13<br>
+<input type="checkbox"> I have read the Terms and Conditions<br>
+<input type="checkbox" checked> Contact me with cool offers!
+</font>
+<br><br>
+<center>
+<input type="submit" value="Sign up">
+</center>
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
