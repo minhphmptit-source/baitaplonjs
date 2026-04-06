@@ -224,3 +224,28 @@ nav a:hover {
 .btn-download:active {
     transform: scale(0.95);    
 }
+.Footer_frame {
+    display: flex;
+    line-height: 30px;
+    justify-content: space-between;
+    background:#0d0213;
+    color: white;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+.column1 {
+    max-width: 300px;
+}
+.Studios{
+    text-align: center;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #0d0213;
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
