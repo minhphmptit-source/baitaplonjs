@@ -1,0 +1,226 @@
+
+header {
+    background-color: #230531; 
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    padding: 10px 10px;        
+    color: white;
+}
+
+
+.logo-box {
+    width: 45px;               
+    height: 45px;              
+    background-color: white;
+    border-radius: 50%;        
+    display: flex;             
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;          
+    border: 2px solid #1797ff; 
+}
+
+.logo-box img {
+    width: 90%;                
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    gap: 30px;                 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #224257;            
+}
+
+.auth-group {
+    display: flex;
+    gap: 15px;
+}
+#signup {
+    background-color: #1797ff; /* Màu xanh của mày */
+    color: white;
+    border-radius: 20px;
+    
+    
+}
+
+#Login {
+    background-color: transparent; 
+    color: #1797ff;
+    border: 2px solid #1797ff;
+    border-radius: 20px;
+    
+    
+}  
+.my-btn{
+    min-width: 70px;
+    padding: 7px 0;      
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+} 
+
+#creator-bar {
+    background-color: #532f81; 
+    padding: 12px 0;           
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    width: 100%;      
+    cursor: pointer;
+}
+
+
+#hh {
+    color: #d9c0fc;            
+    text-decoration: none;     
+    font-weight: bold;         
+    font-size: 15px;           
+    letter-spacing: 1px;       
+    transition: 0.3s;          
+}
+
+
+#creator-bar:hover #hh{
+    color: #ad83e7;            
+    transition: 0.3s;
+}     
+#creator-bar:hover {
+    background-color:#6639a1;
+    transition: 0.3s;
+}
+#background1{
+    width:100% ;
+    height:400px ;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+
+}
+
+
+
+.game-intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* Khoảng cách giữa video và văn bản */
+    padding: 60px 20px;
+    background-color: #0d0213; 
+    flex-wrap: wrap;
+}
+
+.video-container {
+    flex: 0 0 auto; /* Không cho cột video co giãn */
+}
+
+.video-wrapper {
+    width: 500px;
+    max-width: 500px; /* Chiều rộng tối đa của video */
+    aspect-ratio: 16 / 9; /* Tỉ lệ khung hình YouTube */
+    border: 3px solid #FFC800;
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.text-container {
+   
+    text-align: left;
+    max-width: 500px;
+}
+
+.text-container h2 {
+    color: #FFD700; 
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#text2 {
+    color: #777777; 
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#text3 {
+    color: #ffffff; 
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.hero-section{
+    height: 75vh; 
+    background-size: cover;      
+    background-position: center;
+    background-color: #0d0213; 
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+    
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-section h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+    letter-spacing:5x ;   
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.8); 
+}
+
+.btn-download {
+    
+    background: none;      
+    border: none;          
+    padding: 0;            
+    cursor: pointer;       
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: inline-block; 
+}
+
+.btn-download img {
+    width: 150px;          
+    height: auto;          
+    display: block;        
+}
+
+
+.btn-download:hover {
+    transform: scale(1.05);       
+    filter: brightness(1.5);     
+    
+}
+
+
+.btn-download:active {
+    transform: scale(0.95);    
+}
