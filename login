@@ -20,7 +20,6 @@
             flex-direction: column;
         }
 
-        /* Header */
         header {
             display: flex;
             align-items: center;
@@ -68,7 +67,6 @@
             color: white;
         }
 
-        /* Login Card */
         .container {
             flex: 1;
             display: flex;
@@ -179,7 +177,6 @@
             margin-top: 20px;
         }
 
-        /* Footer */
         footer {
             background: #0b0f1a;
             padding: 60px 40px 30px;
@@ -247,8 +244,8 @@
             <p class="subtitle">Social gaming to a whole new level!</p>
 
             <div class="social">
-                <button class="social-btn">🔵 Sign in with Google</button>
-                <button class="social-btn"> Sign in with Apple</button>
+                <button class="social-btn"> Sign in with Google</button>
+                <button class="social-btn"> Sign in with Apple</button>
             </div>
 
             <div class="divider"><span>Or sign in Email</span></div>
