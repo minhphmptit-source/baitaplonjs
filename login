@@ -103,9 +103,8 @@
             flex: 1;
             padding: 13px;
             background: #1e293b;
-            border: 1px solid #334155;
+            border: none;
             border-radius: 8px;
-            color: white;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -115,24 +114,30 @@
 
         .divider {
             text-align: center;
-            margin: 20px 0;
+            margin: 28px 0;
             color: #64748b;
             position: relative;
         }
-
-        .divider::before {
+        .divider::before,
+        .divider::after {
             content: '';
             position: absolute;
             top: 50%;
-            left: 0;
-            right: 0;
+            width:35%;
             height: 1px;
             background: #334155;
+            transform:translateY(-50%);
         }
-
+        .divider::before{
+            left:0;
+        }
+        .divider::after{
+            right:0;
+        }
         .divider span {
             background: #0b0f1a;
-            padding: 0 15px;
+            padding: 0 25px;
+            z-index:20;
         }
 
         input {
