@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Gaggle Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 15px;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+
+        .btn-outline {
+            border: 2px solid #3b82f6;
+            background-color: transparent;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #3b82f6;
+            border: none;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            justify-content: center; 
+            align-items: flex-start;
+            padding: 40px 20px 20px;
+        }
+
+        .form-card {
+            width: 100%;
+            max-width: 420px;
+            background: #0b0f1a;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            margin-bottom: 6px;
+        }
+        .subtitle {
+            font-size: 13.5px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        .social {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .social  .btn {
+            flex: 1;
+            padding: 11px;
+            border-radius: 8px;
+            border: none;
+            background: #1e293b;
+            color: white;
+            cursor: pointer;
+            transition:0.3s;
+        }
+        .social .btn:hover { 
+            background: #334155; 
+            color:white;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 12px;
+            color: #64748b;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 11px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            border: none;
+            background: #1e293b;
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .checkbox {
+            margin: 15px 0 20px;
+        }
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+        }
+        .check-item input {
+            width: 15px;
+            height: 15px;
+            accent-color: #3b82f6;
+        }
+
+        .submit {
+            width: 100%;
+            padding: 13px;
+            background: #2563eb;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit:hover {
+            background: #1d4ed8;
+        }
+        footer {
+            background: #0b0f1a;
+            padding: 40px 60px 25px;
+            margin-top: auto;
+            border-top: 1px solid #1e293b;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .col h3,.col h4 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        .col p {
+            color: #94a3b8;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .col p:hover { color: white; }
+
+        .icons {
+            display: flex;
+            gap: 18px;
+            font-size: 22px;
+        }
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>🪿</span>
+            <span>Gaggle</span>
+        </div>
+        <nav>
+            <a href="#">Games</a>
+            <a href="#">About Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Merch</a>
+        </nav>
+        <div class="header-buttons">
+            <button class="btn btn-outline">Sign up</button>
+            <button class="btn btn-primary">Log in</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-card">
+            <h2>Sign up</h2>
+            <p class="subtitle">Social gaming to a whole new level!</p>
+
+            <div class="social">
+                <button class="btn">Sign in with Google</button>
+                <button class="btn">Sign in with Apple</button>
+            </div>
+
+            <div class="divider">Or sign in Email</div>
+
+            <form>
+                <input type="email" placeholder="Email*" required>
+                <input type="password" placeholder="Password*" required>
+                <input type="password" placeholder="Confirm password*" required>
+
+                <div class="row">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+
+                <input type="date">
+
+                <div class="row">
+                    <input type="text" placeholder="Nick name*">
+                    <input type="text" placeholder="Phone number">
+                </div>
+
+                <div class="row">
+                    <select><option>Select Gender</option><option>Male</option><option>Female</option></select>
+                    <select><option>Select Country</option><option>Vietnam</option><option>USA</option></select>
+                </div>
+
+                <div class="checkbox">
+                    <label class="check-item"><input type="checkbox"> I am over the age of 13</label>
+                    <label class="check-item"><input type="checkbox"> I have read the Terms and Conditions</label>
+                    <label class="check-item"><input type="checkbox" checked> Contact me with cool offers!</label>
+                </div>
+
+                <button type="submit" class="submit">Sign up →</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="col">
+                <h3>Gaggle Studio</h3>
+                <p>We make games that connect people.<br> Focusing on communication as a core mechanic, we aim to change the way we play together forever.</p>
+            </div>
+            <div class="col">
+                <h4>Games</h4>
+                <p>Goose Goose Duck</p>
+                <p>7 Minutes In Hell</p>
+                <p>Coming Soon</p>
+            </div>
+            <div class="col">
+                <h4>Company</h4>
+                <p>About us</p>
+                <p>Support</p>
+                <p>FAQ</p>
+            </div>
+            <div class="col">
+                <h4>Resources</h4>
+                <p>Merch</p>
+                <p>Press Kit</p>
+                <p>Terms & conditions</p>
+            </div>
+            <div class="col">
+                <h4>Stay in touch</h4>
+                <div class="icons">
+                    <a href="https://discord.com/invite/gaggle"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-discord.svg" width="45px" height="45px" ></a>
+                    <a href="https://x.com/gaggle_fun"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-x.svg" width="45px" height="45px"></a>
+                    <a href="https://www.youtube.com/@GaggleStudios"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-youtube.svg" height="45px" width="45px" ></a>
+                    <a href="https://www.tiktok.com/@gagglestudios"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-tiktok.svg" width="45px" height="45px" ></a>
+                    <a href="https://www.instagram.com/gagglestudios"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-instagram.svg" width="45px" height="45px" ></a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>©2026 Gaggle Studios, Inc. All rights reserved.</p>
+            <p>Privacy Policy · Terms of use</p>
+        </div>
+    </footer>
+
+</body>
+</html>
