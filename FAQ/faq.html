@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaggle Fun FAQ</title>
+<link rel="stylesheet" href="styleFAQ.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo-box">
+            <img src="gaggle-logo.png" alt="Logo Gaggle">
+        </div>
+
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Merch</a>
+        </nav>
+
+        <div class="auth-group">
+            <button id="Login" class="my-btn">Log in</button>
+            <button id="signup" class="my-btn">Sign up</button>
+        </div>
+    </header>
+    <!--Thân-->
+    <main>
+        <section class="FAQ">
+            <h1>FAQ</h1>
+            <p>We know you might have some questions regarding our games <br> and systems, so few frequently asked questions with the answers</p>
+            <div class="FAQ-salute">
+                <img id="salute-left" class="salute" src="https://gaggle.fun/assets/images/decorations/salute-left.svg">
+                <img id="salute-right" class="salute" src="https://gaggle.fun/assets/images/decorations/salute-right.svg">
+            </div>
+        </section>
+        <section class="help">
+            <div class="head-help">
+                <h3>How can we help you?</h3><br>
+                <input id="searchInput" type="text" placeholder="🔍 Type keywords to find answers"><br>
+            </div>
+            <div class="button-card">
+                <div class="button">
+                    <button name="General" value="General" class="btn" id="General-btn" data-filter="General" >General</button>
+                    <button name="My Account" value="My Account" class="btn" id="MyAccount-btn" data-filter="My Account" >My Account</button>
+                    <button name="Goose Goose Duck" value="Goose Goose Duck" class="btn" id="GooseGooseDuck-btn" data-filter="Goose Goose Duck" >Goose Goose Duck</button>
+                </div>
+                <div data-category="General" class="card">
+                    <div class="text-tag">
+                        <p class="question">What is gaggle.fun?</p><br>
+                        <p class="answer">A place to play voice-chat integrated games and have adventures with your friends.</p>
+                        <div class="tag"><p class="category-text">General</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="General" class="card">
+                    <div class="text-tag">
+                        <p class="question">What do I need?</p><br>
+                        <p class="answer">Sign up, download the game you want to play, and get started! Our games are designed to work with most laptops and mobile devices, headphones recommended. Wits are entirely optional.</p>
+                        <div class="tag"><p class="category-text">General</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="General" class="card">
+                    <div class="text-tag">
+                        <p class="question">Can I play on my phone or tablet?</p><br>
+                        <p class="answer">Check on the specific game title you wish to play. We're desktop/laptop focused right now but we will be releasing to more platforms later. For Goose Goose Duck, you can play with iOS and Android!</p>
+                        <div class="tag"><p class="category-text">General</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="General" class="card">
+                    <div class="text-tag">
+                        <p class="question">I'm on a Mac, will this work for me?</p><br>
+                        <p class="answer">It should, but sometimes you'll need to give our applications special permissions to let you share your microphone.</p>
+                        <div class="tag"><p class="category-text">General</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="General" class="card">
+                    <div class="text-tag">
+                        <p class="question">Do I need to download separate voice chat software?</p><br>
+                        <p class="answer">Nope! It's all integrated into the game you download.</p>
+                        <div class="tag"><p class="category-text">General</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="My Account" class="card">
+                    <div class="text-tag">
+                        <p class="question">How can I delete my Gaggle account?</p><br>
+                        <p class="answer">If you have a problem or concern, we can help! If you would like to permanently delete your account, please visit "My Account", click "Settings", and then click "Delete account". Just be sure you have the right account, once you delete your account it’s gone forever!</p>
+                        <div class="tag2"><p class="category-text">My Account</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="Goose Goose Duck" class="card">
+                    <div class="text-tag">
+                        <p class="question">I’ve made a purchase, but I don’t see it in my account!</p><br>
+                        <p class="answer">When you make a purchase through Steam, Steam will first authenticate the transaction and place your funds in your Steam wallet. Once the funds are there, try to purchase the pack or gold coin bundle again. Restart the game, and your purchased items should be on your account.<br><br>
+We have a great community on Discord, where there are players and streamers and developers available. We highly recommend joining our Duckscord server, if you ever have any questions or need any technical help.</p>
+                        <div class="tag3"><p class="category-text">Goose Goose Duck</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="Goose Goose Duck" class="card">
+                    <div class="text-tag">
+                        <p class="question">I have an idea for a new role/map/game mode/costume!</p><br>
+                        <p class="answer">We’re always on the lookout for new ideas! Head over to our Duckscord, to our dedicated Ideas channel. Take a look to see what other people have recommended. Please keep in mind to keep the game balanced and fun for all players, some ideas may not be doable, or may already be in the works.<br><br>
+We have a great community on Discord, where there are players and streamers and developers available. We highly recommend joining our Duckscord server, if you ever have any questions or need any technical help.</p>
+                        <div class="tag3"><p class="category-text">Goose Goose Duck</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="Goose Goose Duck" class="card">
+                    <div class="text-tag">
+                        <p class="question">Do I have to play with strangers, or can I play with friends?</p><br>
+                        <p class="answer">Up to you! If you want to play with your friends, just pick the map that you want to play, host a game, and share the room code with your friends. Or, you can play in public matches with strangers. Find a game, see which game mode and map that you want, and have fun!<br><br>
+We have a great community on Discord, where there are players and streamers and developers available. We highly recommend joining our Duckscord server, if you ever have any questions or need any technical help.</p>
+                        <div class="tag3"><p class="category-text">Goose Goose Duck</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+                <div data-category="Goose Goose Duck" class="card">
+                    <div class="text-tag">
+                        <p class="question">How do I report someone/remove someone from the game?</p><br>
+                        <p class="answer">You can block or mute the relevant player in-game and use the in-game censoring filter. You can report the offending player as well, and these reports will be attached to their account, and may result in bans. If you are the lobby host, you can kick out the offending players, and or you can ask the host to kick them. Players who are kicked will not be able to rejoin the game unless allowed back in by the host. If the player in question is the host, and a sufficient number of players block their mics, they will be kicked from the game, and once again that will be reflected on their account.<br><br>
+We have a great community on Discord, where there are players and streamers and developers available. We highly recommend joining our Duckscord server, if you ever have any questions or need any technical help.</p>
+                        <div class="tag3"><p class="category-text">Goose Goose Duck</p></div>
+                    </div>
+                    <img class="arrow" src="https://gaggle.fun/assets/images/icons/downArrMain.svg">
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Could not find a tip?</h3>
+                <a href="https://www.facebook.com/nhat.do.634887/" target="_blank"><button id="contactus" class="my-btn">Contact Us</button></a>
+            </div>
+        </section>
+    </main>
+    <div class="Footer_frame">
+            <div class="column1">
+                <h4>Gaggle Studios</h4>
+                <p>We make games that connect people. Focusing on communication as a core mechanic, we aim to change the way we play together forever.</p>
+            </div>
+            <div class="column">
+                <h4>Games</h4>
+                <a href="#">Goose Goose Duck</a>
+                <a href="#">7 Minutes In Hell</a>
+                <a href="#">Coming Soon</a>
+            </div>
+            <div class="column">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Support</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="column">
+                <h4>Resources</h4>
+                <a href="#">Merch</a>
+                <a href="#">Press Kit</a>
+                <a href="#">Terms&conditions</a>
+            </div>
+            <div class="column">
+                <h4>Stay in touch</h4>
+                <div class="Social">
+                    <a target="_blank" href="https://discord.com/invite/gaggle"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-discord.svg" width="45px" height="45px" ></a>
+                    <a target="_blank" href="https://x.com/gaggle_fun"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-x.svg" width="45px" height="45px"></a>
+                    <a target="_blank" href="https://www.youtube.com/@GaggleStudios"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-youtube.svg" height="45px" width="45px" ></a>
+                    <a target="_blank" href="https://www.tiktok.com/@gagglestudios"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-tiktok.svg" width="45px" height="45px" ></a>
+                    <a target="_blank" href="https://www.instagram.com/gagglestudios"><img src="https://gaggle.fun/assets/images/ggd/home/ggd-web-ico-socials-instagram.svg" width="45px" height="45px" ></a>
+                </div>
+            </div>
+        </div>
+        <div class="Studios">
+            ©2026 Gaggle Studios, Inc. All rights reserved.<br>
+Privacy Policy . Terms of use
+        </div>
+    </div>
+    <script src="JSFAQ.js"></script>
+</body>
+</html>
