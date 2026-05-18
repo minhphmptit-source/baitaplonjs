@@ -211,6 +211,7 @@
         padding-top: 25px;
         padding-bottom: 25px;
         display: none;
+        line-height: 30px;
     }
     .card.active .answer {
         display: block;
