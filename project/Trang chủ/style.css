@@ -1,0 +1,469 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0213;
+    color: white;
+}
+
+header {
+    background-color: #230531; 
+    display: flex;             
+    justify-content: space-between; 
+    align-items: center;       
+    padding: 15px 30px;        
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-box {
+    width: 50px;               
+    height: 50px;              
+    background-color: white;
+    border-radius: 50%;        
+    display: flex;             
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;          
+    border: 2px solid #1797ff; 
+}
+
+.logo-box img {
+    width: 90%;                
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 30px;                 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1797ff;            
+}
+
+.auth-group {
+    display: flex;
+    gap: 15px;
+}
+
+.my-btn {
+    min-width: 90px;
+    padding: 10px 20px;      
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+} 
+
+#signup {
+    background-color: #1797ff; 
+    color: white;
+    border: none;
+}
+
+#signup:hover {
+    background-color: #0d7add;
+}
+
+#Login {
+    background-color: transparent; 
+    color: #1797ff;
+    border: 2px solid #1797ff;
+}  
+
+#Login:hover {
+    background-color: rgba(23, 151, 255, 0.1);
+}
+
+#creator-bar {
+    background-color: #532f81; 
+    padding: 12px 0;           
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    width: 100%;      
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#hh {
+    color: #d9c0fc;            
+    text-decoration: none;     
+    font-weight: bold;         
+    font-size: 15px;           
+    letter-spacing: 1px;       
+    transition: color 0.3s;          
+}
+
+#creator-bar:hover {
+    background-color:#6639a1;
+}
+
+#creator-bar:hover #hh{
+    color: #ffffff;            
+}     
+.hero-section {
+    height: 80vh; 
+    background-image: linear-gradient(to bottom, rgba(13, 2, 19, 0.2), #0d0213), url('https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1568590/capsule_616x353.jpg?t=1772646502');
+    background-size: cover;      
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;   
+    text-shadow: 4px 4px 15px rgba(0,0,0,0.9); 
+    color: #FFD700;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+.btn-download {
+    background: none;      
+    border: none;          
+    padding: 0;            
+    cursor: pointer;       
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: inline-block; 
+}
+
+.btn-download img {
+    width: 180px;          
+    height: auto;          
+    display: block;        
+}
+
+.btn-download:hover {
+    transform: scale(1.05);       
+    filter: brightness(1.2);     
+}
+
+.btn-download:active {
+    transform: scale(0.95);    
+}
+.game-intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    padding: 80px 5%;
+    background-color: #0d0213; 
+    flex-wrap: wrap;
+}
+
+.video-container {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    border: 3px solid #FFC800;
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(255, 200, 0, 0.2); 
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.text-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.text-container h2 {
+    color: #FFD700; 
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+#text2 {
+    color: #cccccc; 
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    color: #aaaaaa;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+#text3 {
+    color: #ffffff; 
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.roles-section {
+    padding: 80px 5%;
+    background-color: #170824;
+    text-align: center;
+}
+
+.roles-section h2 {
+    color: #FFD700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.roles-section > p {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.roles-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.role-card {
+    background-color: #230531;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+}
+
+.role-card.goose:hover { border-color: #ffffff; }
+.role-card.duck:hover { border-color: #ff3333; }
+.role-card.neutral:hover { border-color: #bbbbbb; }
+
+.role-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.role-card p {
+    color: #cccccc;
+    line-height: 1.5;
+}
+footer {
+    background: #0d0213;
+    border-top: 1px solid #333;
+}
+
+.Footer_frame {
+    display: flex;
+    line-height: 30px;
+    justify-content: space-around;
+    padding: 60px 5%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.column1 {
+    max-width: 350px;
+}
+
+.column h4 {
+    color: #FFD700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.column p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+.column a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.column a:hover {
+    color: #1797ff;
+}
+
+.Social {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.Social img {
+    transition: transform 0.3s;
+}
+
+.Social a:hover img {
+    transform: scale(1.2);
+}
+
+.Studios {
+    text-align: center;
+    padding: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    background: #08010d;
+    font-size: 14px;
+}
+
+.Studios a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: underline;
+    margin: 0 10px;
+}
+
+.Studios a:hover {
+    color: white;
+    .download-options {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;       
+    margin-top: 15px;
+    align-items: center;}
+}
+
+.store-btn {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.store-btn img {
+    height: 45px; 
+    width: auto;
+}
+
+.store-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.direct-btn {
+    background-color: #7b6eb1; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 6px;
+    border: 1px solid #9a8fc7;
+    line-height: 1.2;
+}
+.features-grid-section {
+    padding: 80px 5%;
+    background-color: #1a1a24; 
+    display: flex;
+    justify-content: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 1000px;
+    width: 100%;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+
+.feature-icon {
+    flex-shrink: 0; 
+    width: 50px;
+    height: 50px;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+.feature-text {
+    text-align: left;
+}
+
+.feature-text h3 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.feature-text p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+}
